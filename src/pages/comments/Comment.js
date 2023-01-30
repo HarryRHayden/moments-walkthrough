@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import { axiosRes } from '../../api/axiosDefaults';
 import { Avatar } from '../../components/Avatar';
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
-import styles from "../../styles.Comment.module.css";
+import styles from "../../styles/Comment.module.css";
 import CommentEditForm from "./CommentEditForm";
+import { MoreDropdown } from "../../components/MoreDropdown";
 
 export const Comment = (props) => {
     const {

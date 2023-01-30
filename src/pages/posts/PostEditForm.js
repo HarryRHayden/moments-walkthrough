@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-
+import React, { useEffect, useState, useRef } from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
@@ -9,7 +9,7 @@ import Container from "react-bootstrap/Container";
 import styles from "../../styles/PostCreateEditForm.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
-import { Image } from "react-bootstrap";
+import { Image, Alert } from "react-bootstrap";
 import { axiosReq } from "../../api/axiosDefaults";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 

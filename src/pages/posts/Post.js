@@ -1,5 +1,6 @@
 import React from 'react'
-import { Card, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Card, OverlayTrigger, Tooltip, Media } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { axiosReq, axiosRes } from '../../api/axiosDefaults';
 import { Avatar } from '../../components/Avatar';
@@ -125,3 +126,5 @@ export const Post = (props) => {
     </Card>
   )
 }
+
+export default Post;
